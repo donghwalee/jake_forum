@@ -1,0 +1,27 @@
+<h1>Hi Jake</h1>
+
+<h3>Sign Up Jake</h3>
+
+<form action="<%= users_path %>" method="POST">
+
+  <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+
+  <input type="email" name="user[email]" placeholder="your email address">
+  <br/>
+  <input type="password" name="user[password]" placeholder="desired password">
+  <br/>
+  <input type="submit" value="Sign Up">
+</form>
+
+<h3>Sign In Jake</h3>
+
+<form action="<%= session_path %>" method="POST">
+
+  <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+
+  <input type="email" name="user[email]" placeholder="your email address">
+  <br/>
+  <input type="password" name="user[password]" placeholder="enter password">
+  <br/>
+  <input type="submit" value="Sign In">
+</form>
